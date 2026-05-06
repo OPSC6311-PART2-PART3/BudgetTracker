@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Budget Goals"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_min_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum Goal: $0.00"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <SeekBar
+        android:id="@+id/min_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_max_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum Goal: $0.00"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <SeekBar
+        android:id="@+id/max_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5000"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btn_save_goals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Goals"/>
+</LinearLayout>
